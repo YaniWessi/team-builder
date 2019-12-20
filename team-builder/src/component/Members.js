@@ -1,0 +1,16 @@
+import React from "react";
+
+const Members = props => {
+  return (
+    <div className="note-list">
+      {props.members.map(member => (
+        <div className="member" key={member.id}>
+          <h2>{member.name}</h2>
+          <h3>{member.title}</h3>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Members;
